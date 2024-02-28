@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Form
+    link(rel='stylesheet', href='../static/styles.css')
+  body
+    h1 Form
+    form(action='/submit', method='post')
+      div
+        label(for='name') Name:
+        input(type='text', id='name', name='name', required)
+      div
+        label(for='email') Email:
+        input(type='email', id='email', name='email', required)
+      div
+        label(for='message') Message:
+        textarea(id='message', name='message', rows='4', required)
+      div
+        button(type='submit') Submit
